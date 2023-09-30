@@ -1,0 +1,1408 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1d1d1d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- NavBar Styles ----------------------------------- */
+.navbar {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(29, 29, 29, 0.8);
+    z-index: 999;
+}
+
+    /* ---------------------------------------- */
+
+.logo-img {
+    width: 150px;
+    height: 60px ;
+    margin-top: 6px;
+    margin-left: 80px;
+    float: left;
+}
+
+.nav-list {
+    list-style-type: none ;
+    float: right;
+    margin-right: 80px;
+    line-height: 60px;
+    /* margin-left: 50px; */
+}
+
+    /* ---------------------------------------- */
+
+.nav-list   li {
+    display: inline-block ;
+    font-size: 18px;
+    position: relative;
+    transition: 0.5s;
+}
+.nav-list  li  a {
+    text-decoration: none ;
+    color: #38B6FF;
+    font-weight: 600;
+}
+
+
+.nav-list li::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    top: 100%;
+    left:0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #38B6FF;
+}
+
+.nav-list li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.nav-list #home::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    top: 100%;
+    left:0;
+    transition: transform 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: #38B6FF;
+}
+
+/* ------------------------- End Of NavBar Styles ------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 01 Styles ------------------------------- */
+.sec01-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(../images/BG02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /* ---------------------------------------- */
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.65);
+}
+.home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home {
+    text-align: center;
+    color: white;
+    margin: 100px 0;
+}
+
+
+    /* ---------------------------------------- */
+.home h1 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.home p {
+    margin: -20px 0 25px 0;
+    font-size: 18px;
+}
+
+.get-started-btn {
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #38B6FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+.get-started-btn  a {
+    text-decoration: none ;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+.learn-more-btn {
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d1d1d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+.learn-more-btn  a {
+    text-decoration: none ;
+    color: #38B6FF;
+    font-weight: 600;
+}
+
+/* ---------------------- End Of Section 01 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 02 Styles ------------------------------- */
+.sec02-container {
+    /* border: #1d1d1d 2px solid; */
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+    /* ---------------------------------------- */
+
+.welcome {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.welcome-txt {
+    font-size: 16px;
+}
+
+#line {
+    margin: auto;
+    width: 70px;
+    height: 5px;
+    background-color: #38B6FF;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+    /* ---------------------------------------- */
+
+.sec02 .cards-container {
+    width: 80%;
+    margin:auto;
+    margin-top: 100px;
+    overflow: auto;
+    text-align: center;
+    position: relative;
+}
+
+.sec02 .cards .card {
+    position: relative;
+    margin: auto;
+    float: left;
+    width: 30%;
+    height: 180px;
+    border: 2px solid #1d1d1d;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 15px 25px 25px 25px;
+    line-height: 25px;
+}
+
+.sec02 .cards .card::after {
+    position: absolute;
+    content: "";
+    width: 0 ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 51, 51) ;
+    opacity: 0 ;
+    transition: 0.5s;
+}
+.sec02 .cards .card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1 ;
+}
+
+.sec02 .cards .card h3 {
+    position: relative;
+    z-index: 5;
+}
+
+.sec02 .cards .card p {
+    position: relative;
+    z-index: 5;
+    font-size: small;
+    margin: 10px 0;
+    line-height: 15px;
+}
+
+.sec02 .cards .card i {
+    position: relative;
+    z-index: 5;
+    font-size: 30px;
+    color: #38B6FF;
+    margin-bottom: 15px;
+
+}
+
+.sec02 .cards .card a {
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+    color: #38B6FF;
+    font-weight: 600;
+}
+
+.sec02 .cards .card:hover p , .sec02 .cards .card:hover h3 {
+    color: #f2f2f2;
+}
+
+
+/* ---------------------- End Of Section 02 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 03 Styles ------------------------------- */
+.sec03-container {
+    background-color: #1d1d1d;
+    position: relative;
+    width: 100%;
+    height: 1150px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+    /* ---------------------------------------- */
+
+.sec03 .header {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+.sec03 .header .txt {
+    font-size: 16px;
+}
+
+
+    /* ---------------------------------------- */
+
+.sec03 .cards {
+    width: 80%;
+    margin:auto;
+    margin-top: 100px;
+    overflow: auto;
+    text-align: center;
+}
+
+.sec03 .cards .card {
+    overflow: auto;
+    margin: auto;
+    float: left;
+    width: 30%;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0px 0px 25px 0px;
+    line-height: 25px;
+}
+
+    /* ---------------------------------------- */
+
+.sec03 .cards .card .parent {
+    position: relative;
+    /* border: 2px solid #38B6FF; */
+    width: 100%;
+    height:80%;
+}
+
+.sec03 .cards .card h3 {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+    /* ---------------------------------------- */
+
+.sec03 .cards .card .parent .overlay {
+    position : absolute;
+    z-index: 2;
+    width : 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.sec03 .cards .card .parent .project-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
+.sec03 .cards .card .parent .details {
+    padding: 40px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    line-height: 12px;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+  
+.sec03 .cards .card:hover .parent .details {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+    /* ---------------------------------------- */
+
+.sec03 .cards .card .parent .details .desc {
+    margin: auto;
+    width: 90%;
+    font-size: medium;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff ;
+
+}
+
+.sec03 .cards .card .parent .details .category {
+    margin: auto;
+    width: 90%;
+    font-size: large;
+    line-height: 18px;
+    font-weight: 600;
+    color: #ffffff ;
+}
+
+.sec03 .cards .card .parent .details button {
+    width: 100px;
+    height: 30px;
+    background-color: #38B6FF;
+    border: none;
+    border-radius: 3px;
+}
+
+.sec03 .cards .card .parent .details a {
+    margin: auto;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+/* ---------------------- End Of Section 03 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 04 Styles ------------------------------- */
+.sec04-container {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+    /* ---------------------------------------- */
+
+.sec04 .header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.sec04 .header-txt {
+    font-size: 16px;
+}
+
+    /* ---------------------------------------- */
+
+
+
+
+.sec04 .cards-container {
+    width: 80%;
+    margin:auto;
+    margin-top: 100px;
+    overflow: auto;
+    text-align: center;
+}
+
+.sec04 .row2 {
+    margin-top: 50px;
+}
+
+.sec04 .cards .card {
+    position: relative;
+    margin: auto;
+    float: left;
+    width: 30%;
+    height: 190px;
+    border: 2px solid #1d1d1d;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 15px 25px 25px 25px;
+    line-height: 25px;
+}
+
+.sec04 .cards .card::after {
+    position: absolute;
+    content: "";
+    width: 0 ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 51, 51) ;
+    opacity: 0 ;
+    transition: 0.5s;
+}
+.sec04 .cards .card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1 ;
+}
+
+.sec04 .cards .card:hover p , .sec04 .cards .card:hover h3 {
+    color: #f2f2f2;
+}
+
+.sec04 .cards .card i {
+    position: absolute;
+    z-index: 5;
+    font-size: 30px;
+    left: 25px;
+    top: 30px;
+    color: #38B6FF;
+}
+
+.sec04 .cards .card h3 {
+    position: absolute;
+    z-index: 5;
+    font-size: 25px;
+    left: 70px;
+    top: 30px;
+}
+
+.sec04 .cards .card p {
+    text-align: left;
+    position: absolute;
+    z-index: 5;
+    top: 70px;
+    left: 70px;
+    font-size: small;
+}
+
+.sec04 .cards .card button a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+.sec04 .cards .card button {
+    position: absolute;
+    z-index: 5;
+    top: 135px;
+    left: 72px;
+    height: 30px;
+    width: 120px;
+    background-color: #38B6FF;
+    border: none;
+    border-radius: 5px;
+}
+/* ---------------------- End Of Section 04 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 05 Styles ------------------------------- */
+.sec05-container {
+    background-color: #1d1d1d;
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+    /* ---------------------------------------- */
+.sec05 .inner-container {
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    /* margin-top: 40px; */
+    position: relative;
+    /* border: 2px solid #38B6FF; */
+}
+    /* ---------------------------------------- */
+    .sec05 .inner-container .closure {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #38B6FF;
+        font-weight: 400;
+    }
+
+    /* ---------------------------------------- */
+    .sec05 .inner-container .right-item ul {
+        position: absolute;
+        right: 7.5%;
+        top: 83%;
+    }
+
+        .sec05 .inner-container .right-item ul li {
+            list-style-type: none;
+            display: inline-block;
+            background-color: #3a3939;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+        }
+
+        .sec05 .inner-container .right-item ul #first {
+            background-color: #38B6FF;
+        }
+        .sec05 .inner-container .right-item ul li:hover {
+            background-color: #38B6FF;
+        }
+        /* ---------------------------------------- */
+
+    .sec05 .inner-container .right-item .img-container {
+    position: absolute;
+    right: 7%;
+    top: 25%;
+    border-radius: 10px;
+    }
+
+
+        .sec05 .inner-container .right-item img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        /* ---------------------------------------- */
+    /* ---------------------------------------- */
+    .sec05 .inner-container .left-item {
+        width: 65%;
+        position: absolute;
+    }
+
+        /* ---------------------------------------- */
+        .sec05 .inner-container .left-item h1 {
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            color: #38B6FF;
+        }
+
+        .sec05 .inner-container .left-item > p {
+            /* width : 60%; */
+            margin-top: 15px;
+            color: #f2f2f2;
+            text-align: justify;    
+        }
+    
+        .sec05 .inner-container .left-item .items-row {
+            position: relative;
+            margin-top: 35px;
+            margin-left: 30px;
+            overflow: auto;
+            padding-left: 100px;
+        }
+            /* ---------------------------------------- */
+            .sec05 .inner-container .left-item .items-row .item {
+                position: relative;
+                width: 40%;
+                height: 100px;
+                margin-right: 10%;
+                float: left;
+                border-radius: 10px;
+            }
+            .sec05 .inner-container .left-item .items-row .item .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.25);
+                border-radius: 10px;
+                opacity: 0;
+                transition: 1s;
+            }
+
+            .sec05 .inner-container .left-item .items-row .item:hover .back {
+                opacity: 1;
+            }
+                /* ---------------------------------------- */
+                .sec05 .inner-container .left-item .items-row .item .item-head {
+                    overflow: auto;
+                }
+                    /* ---------------------------------------- */
+                    .sec05 .inner-container .left-item .items-row .item h3 {
+                        float: left;
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        color: #38B6FF;
+                    }
+
+                    .sec05 .inner-container .left-item .items-row .item i {
+                        float: left;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: #38B6FF;
+                        font-size: 20px;
+                        margin-top: 14px;
+                    }
+
+                    .sec05 .inner-container .left-item .items-row .item p {
+                        text-align: justify;
+                        font-size: small;
+                        margin-top: 8px;
+                        margin-left: 10px;
+                        margin-right: 10px ;
+                        color: #bdbaba;
+                    }
+                    /* ---------------------------------------- */
+                /* ---------------------------------------- */
+            /* ---------------------------------------- */
+        /* ---------------------------------------- */
+    /* ---------------------------------------- */
+
+
+/* ---------------------- End Of Section 05 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 06 Styles ------------------------------- */
+.sec06-container {
+    background-image: url(../images/BG04.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* ---------------------------------------- */
+
+.sec06 .overlay {
+    width: 100%;
+    height: 350px;
+    background-color: rgba(29, 29, 29, 0.85);
+}
+.sec06 .row {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    padding: 100px;
+    overflow: auto;
+    text-align: center;
+}
+
+/* ---------------------------------------- */
+
+.sec06 .row .item {
+    float: left;
+    width: 20%;
+    margin-left: 2.3%;
+    margin-right: 2.5%;
+    margin-top: 20px;
+    color: #f2f2f2;
+    text-align: center;
+}
+.sec06 .row .item i {
+    font-size: 35px;
+    color: #38B6FF;
+    margin-bottom: 15px;
+}
+.sec06 .row .item h1 {
+    font-weight: bolder;
+}
+/* ---------------------- End Of Section 06 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 07 Styles ------------------------------- */
+.sec07-container {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* ---------------------------------------- */
+
+.sec07 .header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.sec07 .header-txt {
+    font-size: 16px;
+}
+
+.sec07 .header-title {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------- */
+
+.sec07 .inner-container {
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+
+/* ---------------------------------------- */
+
+.sec07 .inner-container .plan {
+    position: relative;
+    width: 29.33333%;
+    height: 90%;
+    border: 1px solid #1d1d1d;
+    float : left;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sec07 .inner-container .plan::after {
+    position: absolute;
+    content: "";
+    width: 100% ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5) ;
+    opacity: 0 ;
+    transition: 0.7s;
+}
+.sec07 .inner-container .plan:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+
+
+.sec07 .inner-container .plan .circle {
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #38B6FF;
+    border-radius: 50%;
+    padding-top: 12px;
+}
+
+.sec07 .inner-container .plan ul {
+    margin-top: 20px;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+
+.sec07 .inner-container .plan button {
+    margin-top: 25px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #38B6FF;
+    border-radius: 5px;
+}
+
+
+.sec07 .inner-container .plan a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 800;
+}
+/* ---------------------- End Of Section 07 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 08 Styles ------------------------------- */
+.sec08-container {
+    background-image: url(../images/BG03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* ---------------------------------------- */
+
+.sec08 .overlay {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(29, 29, 29, 0.85);
+}
+.sec08 .row {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+    overflow: auto;
+}
+
+/* ---------------------------------------- */
+
+.sec08 .row .item {
+    float: left;
+    width: 45%;
+    height: 250px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 20px;
+    color: #f2f2f2;
+}
+
+/* ---------------------------------------- */
+
+.sec08 .row .item .item-header {
+overflow: auto;
+}
+.sec08 .row .item .item-header img {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #38B6FF;
+    border-radius: 50%;
+    float: left;
+}
+.sec08 .row .item .item-header .name {
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+/* ---------------------------------------- */
+
+.sec08 .row .item .quote {
+    background-color: rgba(29, 29, 29, 0.65);
+    border-left: 4px solid #38B6FF;
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.sec08 .row .item .quote p {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+}
+.sec08 .row .item .quote footer {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+.sec08 .row .item .quote i {
+    font-size: 20px;
+    color: #38B6FF;
+}
+
+/* ---------------------- End Of Section 08 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 09 Styles ------------------------------- */
+.sec09-container {
+    background-color: #1d1d1d;
+    position: relative;
+    width: 100%;
+    height: 1320px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.sec09 .header-txt {
+    font-size: 16px;
+}
+
+.sec09 .header-title {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row {
+    width: 80%;
+    height: 480px;
+    margin: 40px auto;
+    padding-top: 40px;
+    overflow: auto;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row .item {
+    position : relative;
+    float: left;
+    width: 29.3333%;
+    height: 400px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 35px;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row .item .team-img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.sec09 .row .item .team-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row .item .team-img .team-overlay {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    
+}
+
+.sec09 .row .item .team-img:hover .team-overlay {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+/* ---------------------------------------- */
+
+.sec09 .team-item::after {
+    position: absolute;
+    content: "";
+    width: 100% ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(14, 15, 14) ;
+    border: 1px solid #38B6FF;
+    border-radius: 5px;
+    opacity: 0 ;
+    transition: 1s;
+}
+.sec09 .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row .item i {
+    color: #1d1d1d;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.sec09 .row .item a {
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #38B6FF;
+    margin-left: auto;
+}
+
+/* ---------------------------------------- */
+
+.sec09 .row .item .team-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.sec09 .row .item .team-info h5 {
+    color: #38B6FF;
+}
+/* ---------------------- End Of Section 09 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 10 Styles ------------------------------- */
+.sec10 {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    height: 880px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* ---------------------------------------- */
+
+.sec10 .header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+.sec10 .header-txt {
+    font-size: 16px;
+}
+.sec10 .header-title {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------- */
+
+.sec10 .inner-container {
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+    /* border: 1px solid #38B6FF; */
+}
+
+/* ---------------------------------------- */
+
+.sec10 .inner-container .post {
+    position: relative;
+    width: 29.33333%;
+    height: 90%;
+    /* border: 1px solid #1d1d1d; */
+    float : left;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.sec10 .inner-container .post::after {
+    position: absolute;
+    content: "";
+    width: 100% ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5) ;
+    border-radius: 5px;
+    opacity: 0 ;
+    transition: 0.7s;
+}
+.sec10 .inner-container .post:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+
+/* ---------------------------------------- */
+
+.sec10 .inner-container .post .post-img img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* ---------------------------------------- */
+
+.sec10 .inner-container .post .post-details .post-info {
+    text-align: left;
+    color: #1d1d1d;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.sec10 .inner-container .post .post-details .post-info i {
+    color: #38B6FF;
+}
+
+/* ---------------------------------------- */
+
+.sec10 .inner-container .post .post-details p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #6b6969;
+}
+
+.sec10 .inner-container .post .post-details a {
+    text-decoration: none;
+    color: #38B6FF;
+    font-weight: 600;
+}
+/* ---------------------- End Of Section 10 Styles --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 11 Styles ------------------------------- */
+.sec11 {
+    background-color: #1d1d1d;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* ---------------------------------------- */
+
+.sec11 .footer-img {
+    width: 250px;
+    margin: auto;
+}
+.sec11 img {
+    width: 250px;
+}
+
+/* ---------------------------------------- */
+
+.sec11 .footer-icons .icon-holder {
+    display: inline-block;
+    background-color: #38B6FF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+}
+
+.sec11 .footer-icons a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.sec11 .footer-icons {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sec11 .footer-icons i {
+    background-color: #38B6FF;
+    padding: 0;
+}
+
+/* ---------------------------------------- */
+
+.sec11 .rights {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #727272;
+}
+
+/* ---------------------- End Of Section 11 Styles --------------------------- */
+
+
+
+
+
+
