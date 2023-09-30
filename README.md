@@ -18,6 +18,10 @@ This is a fictional web design project that showcases the frontend HTML and CSS 
 https://github.com/Farahat612/DataNex-Solutions-Website-Design/assets/67427124/6e59ae42-8441-4f77-976e-324a452e6f78
 
 
+## Explore
+
+You can explore the website through this ([url](https://farahat612.github.io/DataNex-Solutions-Website-Design/)). 
+
 
 ## Key Features:
 
