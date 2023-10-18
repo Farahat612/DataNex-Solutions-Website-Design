@@ -5,7 +5,7 @@ A simple website design using only standard HTML and CSS for DataNex Solutions c
 
 ## Overview
 
-DataNex Solutions is a dictional leading data solutions company dedicated to empowering businesses with actionable insights and innovative technology solutions. With a relentless commitment to excellence and a client-centric approach, they help organizations harness the power of data to drive growth, efficiency, and success.
+DataNex Solutions is a fictional leading data solutions company dedicated to empowering businesses with actionable insights and innovative technology solutions. With a relentless commitment to excellence and a client-centric approach, they help organizations harness the power of data to drive growth, efficiency, and success.
 
 
 ## Description
